@@ -14,12 +14,13 @@ const validationSchema = yup.object().shape({
     .required('Password is required'),
 });
 
-const Login = () => {
+const Login = ({navigation}) => {
   const [showPassword, setShowPassword] = useState(false);
 
   //Login handleSubmit function
   const handleSubmit = async values => {
     console.log('values', values);
+    navigation.navigate('Home')
   };
   return (
     <>

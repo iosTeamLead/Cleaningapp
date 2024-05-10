@@ -10,10 +10,10 @@ const BottomtabNavigation = () => {
   return (
     <Tab.Navigator
       screenOptions={() => ({
-        tabBarActiveTintColor: 'orange',
-        tabBarInactiveTintColor: '#fff',
+        tabBarActiveTintColor: '#f0f0f7',
+        tabBarInactiveTintColor: '#25435F',
         tabBarStyle: {
-          backgroundColor: 'purple',
+          backgroundColor: '#f0f0f7',
           borderTopWidth: 0,
           elevation: 0,
           paddingTop: 10,
@@ -26,7 +26,7 @@ const BottomtabNavigation = () => {
         component={Home}
         options={{
           headerShown: false,
-          tabBarIcon: () => <Icon name="home" color="#fff" size={25} />,
+          tabBarIcon: () => <Icon name="home" color="#25435F" size={30} />,
         }}
       />
       <Tab.Screen
@@ -34,7 +34,7 @@ const BottomtabNavigation = () => {
         component={Notification}
         options={{
           headerShown: false,
-          tabBarIcon: () => <Icon name="settings" color="#fff" size={25} />,
+          tabBarIcon: () => <Icon name="settings" color="#25435F" size={30} />,
         }}
       />
     </Tab.Navigator>

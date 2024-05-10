@@ -4,16 +4,12 @@ import Notification from '../screen/Notification';
 import CarNumberPlate from '../screen/CarNumberPlate';
 // import Home from '../screen/Home';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-// import SplachScreen from '../screen/SplachScreen';
-// import BottomtabNavigation from './BottomtabNavigation';
 
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigation = () => {
   return (
     <Drawer.Navigator initialRouteName='SplachScreen'>
-      {/* <Drawer.Screen name="Home" component={BottomtabNavigation} options={{headerShown:false}}/> */}
-      {/* <Drawer.Screen name="SplachScreen" component={SplachScreen} options={{headerShown:false}}/> */}
       <Drawer.Screen
         name="CarNumberPlate"
         component={CarNumberPlate}

@@ -12,8 +12,10 @@ const styles = StyleSheet.create ({
         fontWeight:'700',
     },
     h2:{
-        fontSize:32,
-        fontWeight:'600'
+        fontSize:28,
+        fontWeight:'400',
+        color:'#000',
+        lineHeight:35
     },
     h3:{
         fontSize:28,
@@ -21,7 +23,8 @@ const styles = StyleSheet.create ({
     },
     h4:{
         fontSize:25,
-        fontWeight:'500'
+        fontWeight:'500',
+        lineHeight:30
     },
     h5:{
         fontSize :20,
@@ -84,6 +87,20 @@ const styles = StyleSheet.create ({
     },
     errortext:{
         color:'red'
-    }
+    },
+    whitebox: {
+        backgroundColor: '#F4F3F3',
+        flex: 1,
+        borderRadius: 10,
+        padding:20,
+        shadowColor: '#000',
+        // shadowOffset: {
+        //   width: 0,
+        //   height: 4,
+        // },
+        shadowOpacity: 5,
+        shadowRadius: 4,
+        elevation:4
+      }
 });
 export default styles;
