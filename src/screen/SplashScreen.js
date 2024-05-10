@@ -10,7 +10,7 @@ const SplashScreen = () => {
   // useEffect(()=>{
   //     setTimeout(()=>{
   //         navigation.navigate('CarNumberPlate')
-  //     },10000)
+  //     },5000)
   // },[])
   return (
     <View
@@ -20,12 +20,12 @@ const SplashScreen = () => {
         justifyContent: 'center',
         backgroundColor: '#25435F',
       }}>
-      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <View style={{flex: 4, alignItems: 'center', justifyContent: 'center'}}>
         <Text style={{fontSize: 40, color: '#F9C62E', fontWeight: '600'}}>
           WebCleaning
         </Text>
       </View>
-      <View>
+      <View style={{flex:1}}>
         <TouchableOpacity style={styles.btn}>
             <Text style={styles.btntext}>Get Started</Text>
         </TouchableOpacity>
