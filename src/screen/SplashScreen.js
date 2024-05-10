@@ -1,17 +1,16 @@
 import {Text, View} from 'react-native';
 import React, {useEffect} from 'react';
-import {useNavigation} from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import styles from '../styles/Styles';
 
-const SplashScreen = () => {
-  const navigation = useNavigation();
+const SplashScreen = ({navigation}) => {
 
-  // useEffect(()=>{
-  //     setTimeout(()=>{
-  //         navigation.navigate('CarNumberPlate')
-  //     },10000)
-  // },[])
+
+  useEffect(()=>{
+      setTimeout(()=>{
+          navigation.navigate('LoginOption')
+      },5000)
+  },[])
   return (
     <View
       style={{
@@ -20,13 +19,13 @@ const SplashScreen = () => {
         justifyContent: 'center',
         backgroundColor: '#25435F',
       }}>
-      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <View style={{flex: 4, alignItems: 'center', justifyContent: 'center'}}>
         <Text style={{fontSize: 40, color: '#F9C62E', fontWeight: '600'}}>
           WebCleaning
         </Text>
       </View>
-      <View>
-        <TouchableOpacity style={styles.btn}>
+      <View style={{flex:1}}>
+        <TouchableOpacity style={styles.btn} onPress={()=>navigation.navigate('LoginOption')}>
             <Text style={styles.btntext}>Get Started</Text>
         </TouchableOpacity>
       </View>
