@@ -12,14 +12,14 @@ const StackNavigation = () => {
   return (
     <Stack.Navigator initialRouteName='SplashScreen'>
       <Stack.Screen name="SplashScreen" component={SplashScreen} options={{headerShown:false}}/>
-      <Stack.Screen name="LoginOption" component={LoginOption} options={{headerShown:true}}/>
+      <Stack.Screen name="LoginOption" component={LoginOption} options={{headerShown:false}}/>
         <Stack.Screen
           name="CarNumberPlate"
           component={DrawerNavigation}
           options={{headerShown: false}}
         />
          <Stack.Screen name="Home" component={BottomtabNavigation}/>
-        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>
       </Stack.Navigator>
   );
 };
