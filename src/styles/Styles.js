@@ -26,10 +26,18 @@ const styles = StyleSheet.create ({
         fontWeight:'500'
     },
     btn:{
-        fontSize:15,
         fontWeight:'500',
         padding:15,
-        borderRadius:10,
+        borderRadius:23,
+        backgroundColor:'#fff',
+        width:233,
+        height:62
+    },
+    btntext:{
+        color:'#25435F',
+        fontSize:22,
+        fontWeight:'600',
+        textAlign:'center',
     }
 });
 export default styles;

@@ -2,6 +2,7 @@ import {Text, View} from 'react-native';
 import React, {useEffect} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import styles from '../styles/Styles';
 
 const SplashScreen = () => {
   const navigation = useNavigation();
@@ -25,8 +26,8 @@ const SplashScreen = () => {
         </Text>
       </View>
       <View>
-        <TouchableOpacity>
-            <Text>Get Sta</Text>
+        <TouchableOpacity style={styles.btn}>
+            <Text style={styles.btntext}>Get Started</Text>
         </TouchableOpacity>
       </View>
     </View>
