@@ -30,11 +30,11 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '500',
   },
-  text:{
-fontSize:14,
-fontWeight:500,
-lineHeight:20,
-color:'#000'
+  text: {
+    fontSize: 14,
+    fontWeight: 500,
+    lineHeight: 20,
+    color: '#000',
   },
   btn: {
     fontWeight: '500',
@@ -99,14 +99,11 @@ color:'#000'
     flex: 1,
     borderRadius: 10,
     padding: 20,
-    shadowColor: '#000',
-    // shadowOffset: {
-    //   width: 0,
-    //   height: 4,
-    // },
-    shadowOpacity: 5,
-    shadowRadius: 4,
     elevation: 4,
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 4},
+    shadowOpacity: 0.4,
+    shadowRadius: 4,
   },
 });
 export default styles;
