@@ -35,7 +35,7 @@ const Home = () => {
         <View style={styles.whitebox}>
           <Text style={styles.h2}>On-Demand house cleaning services</Text>
           <TouchableOpacity>
-            <Text>Find Helper</Text>
+            <Text style={styles.text}>Find Helper</Text>
           </TouchableOpacity>
         </View>
       </View>
