@@ -41,7 +41,7 @@ const Login = ({navigation}) => {
         }) => (
           <View style={styles.container}>
             <View
-              style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+              style={{flex: 1, alignItems: 'center', justifyContent: 'center',margin:10}}>
               <Text style={[styles.h3, {color: '#000'}]}>Sign In</Text>
               <View style={[styles.textfield_wrapper, {marginTop: 30}]}>
                 <TextInput
