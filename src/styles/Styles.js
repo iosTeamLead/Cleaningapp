@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 14,
-    fontWeight: 500,
+    fontWeight: '500',
+   fontFamily:"Rubik-Italic",
     lineHeight: 20,
     color: '#000',
   },
